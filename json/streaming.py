@@ -5,7 +5,7 @@ import sys
 final_list = list()
 watch_list = ["alpha", "beta", "gamma"]
 i = 0
-response = requests.get('<>streaming-url-returning-json')
+response = requests.get('<streaming-url-returning-json>')
 if response.status_code == 200:
     result = response.json()
     stream_list = result[0]['streams']
